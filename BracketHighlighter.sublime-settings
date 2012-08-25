@@ -1,0 +1,13 @@
+{
+    //Enable bracket matching on type
+    "quote_enable" : false, //引号
+    "curly_enable" : false, //大括号
+    "round_enable" : false, //小括号
+    "square_enable": false, //中括号
+    "angle_enable" : true, //尖括号
+
+    "tag_enable"   : false, //标签
+
+    //不显示不匹配的标签
+    "ignore_non_tags" : true 
+}

@@ -1,0 +1,17 @@
+{
+	"auto_upgrade_last_run": 1345685191,
+	"installed_packages":
+	[
+		"Alignment",
+		"BracketHighlighter",
+		"CodeIgniter Snippets",
+		"ColorPick",
+		"Git",
+		"jQuery",
+		"Package Control",
+		"Tag",
+		"Theme - Soda",
+		"zenburn",
+		"ZenCoding"
+	]
+}
