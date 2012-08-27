@@ -1,0 +1,13 @@
+# OS generated files #
+######################
+.DS_Store?
+.swp?
+.swo
+.swp
+*.swp
+ehthumbs.db
+Icon?
+Thumbs.db
+*.tags
+.project
+.DS_Store
