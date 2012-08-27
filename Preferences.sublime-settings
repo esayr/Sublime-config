@@ -29,6 +29,8 @@
     //vim 模式
     //"ignored_packages": [],
 
+    "folder_exclude_patterns": [".svn", ".git", ".hg", "CVS", "bbs.androidcn.com", "passport.androidcn.com"],
+
     //单词分隔标识
     "word_separators": "./\\()\"':,.;<>~!@#$%^&*|+=[]{}`~?"
 }
