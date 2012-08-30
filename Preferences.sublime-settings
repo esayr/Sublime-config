@@ -1,11 +1,14 @@
 {
     //文档的中文参考这里 http://www.feelcss.com/sublime-text-2-settings.html
     
-	"color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
+    "color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
     "theme": "Soda Dark.sublime-theme",
-	"font_size": 15.0,
-	"tab_size": 4,
-	"translate_tabs_to_spaces": true,
+    //"font_face": "Consolas", 
+    "font_face": "courier new", 
+    //"font_face": "YaHei Consolas Hybrid",
+    "font_size": 15.0,
+    "tab_size": 4,
+    "translate_tabs_to_spaces": true,
 
     //不管鼠标在不在行号边栏, 代码折叠按钮一直显示
     "fade_fold_buttons": false,
