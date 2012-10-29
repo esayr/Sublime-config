@@ -1,5 +1,5 @@
 {
-	"auto_upgrade_last_run": 1346290699,
+	"auto_upgrade_last_run": 1351216626,
 	"installed_packages":
 	[
 		"Alignment",
@@ -8,6 +8,7 @@
 		"ColorPick",
 		"Git",
 		"jQuery",
+		"jQuery Snippets pack",
 		"LESS",
 		"LESS-build",
 		"Package Control",
