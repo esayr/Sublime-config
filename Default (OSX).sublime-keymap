@@ -416,90 +416,95 @@ and don't need to be repeated here. Anything listed here will take precedence, h
         ]
     },
 
-    {
-        "keys": ["super+alt+1"],
-        "command": "set_layout",
-        "args":
+    //多窗口分割样式
         {
-            "cols": [0.0, 1.0],
-            "rows": [0.0, 1.0],
-            "cells": [[0, 0, 1, 1]]
-        }
-    },
-    {
-        "keys": ["super+alt+2"],
-        "command": "set_layout",
-        "args":
+            "keys": ["super+alt+1"],
+            "command": "set_layout",
+            "args":
+            {
+                "cols": [0.0, 1.0],
+                "rows": [0.0, 1.0],
+                "cells": [[0, 0, 1, 1]]
+            }
+        },
         {
-            "cols": [0.0, 0.5, 1.0],
-            "rows": [0.0, 1.0],
-            "cells": [[0, 0, 1, 1], [1, 0, 2, 1]]
-        }
-    },
-    {
-        "keys": ["super+alt+3"],
-        "command": "set_layout",
-        "args":
+            "keys": ["super+alt+2"],
+            "command": "set_layout",
+            "args":
+            {
+                "cols": [0.0, 0.5, 1.0],
+                "rows": [0.0, 1.0],
+                "cells": [[0, 0, 1, 1], [1, 0, 2, 1]]
+            }
+        },
         {
-            "cols": [0.0, 0.33, 0.66, 1.0],
-            "rows": [0.0, 1.0],
-            "cells": [[0, 0, 1, 1], [1, 0, 2, 1], [2, 0, 3, 1]]
-        }
-    },
-    {
-        "keys": ["super+alt+4"],
-        "command": "set_layout",
-        "args":
+            "keys": ["super+alt+3"],
+            "command": "set_layout",
+            "args":
+            {
+                "cols": [0.0, 0.33, 0.66, 1.0],
+                "rows": [0.0, 1.0],
+                "cells": [[0, 0, 1, 1], [1, 0, 2, 1], [2, 0, 3, 1]]
+            }
+        },
         {
-            "cols": [0.0, 0.25, 0.5, 0.75, 1.0],
-            "rows": [0.0, 1.0],
-            "cells": [[0, 0, 1, 1], [1, 0, 2, 1], [2, 0, 3, 1], [3, 0, 4, 1]]
-        }
-    },
-    {
-        "keys": ["super+alt+shift+2"],
-        "command": "set_layout",
-        "args":
+            "keys": ["super+alt+4"],
+            "command": "set_layout",
+            "args":
+            {
+                "cols": [0.0, 0.25, 0.5, 0.75, 1.0],
+                "rows": [0.0, 1.0],
+                "cells": [[0, 0, 1, 1], [1, 0, 2, 1], [2, 0, 3, 1], [3, 0, 4, 1]]
+            }
+        },
         {
-            "cols": [0.0, 1.0],
-            "rows": [0.0, 0.5, 1.0],
-            "cells": [[0, 0, 1, 1], [0, 1, 1, 2]]
-        }
-    },
-    {
-        "keys": ["super+alt+shift+3"],
-        "command": "set_layout",
-        "args":
+            "keys": ["super+alt+shift+2"],
+            "command": "set_layout",
+            "args":
+            {
+                "cols": [0.0, 1.0],
+                "rows": [0.0, 0.5, 1.0],
+                "cells": [[0, 0, 1, 1], [0, 1, 1, 2]]
+            }
+        },
         {
-            "cols": [0.0, 1.0],
-            "rows": [0.0, 0.33, 0.66, 1.0],
-            "cells": [[0, 0, 1, 1], [0, 1, 1, 2], [0, 2, 1, 3]]
-        }
-    },
-    {
-        "keys": ["super+alt+5"],
-        "command": "set_layout",
-        "args":
+            "keys": ["super+alt+shift+3"],
+            "command": "set_layout",
+            "args":
+            {
+                "cols": [0.0, 1.0],
+                "rows": [0.0, 0.33, 0.66, 1.0],
+                "cells": [[0, 0, 1, 1], [0, 1, 1, 2], [0, 2, 1, 3]]
+            }
+        },
         {
-            "cols": [0.0, 0.5, 1.0],
-            "rows": [0.0, 0.5, 1.0],
-            "cells":
-            [
-                [0, 0, 1, 1], [1, 0, 2, 1],
-                [0, 1, 1, 2], [1, 1, 2, 2]
-            ]
-        }
-    },
+            "keys": ["super+alt+5"],
+            "command": "set_layout",
+            "args":
+            {
+                "cols": [0.0, 0.5, 1.0],
+                "rows": [0.0, 0.5, 1.0],
+                "cells":
+                [
+                    [0, 0, 1, 1], [1, 0, 2, 1],
+                    [0, 1, 1, 2], [1, 1, 2, 2]
+                ]
+            }
+        },
+    //焦点放在某个分屏窗口
     { "keys": ["ctrl+1"], "command": "focus_group", "args": { "group": 0 } },
     { "keys": ["ctrl+2"], "command": "focus_group", "args": { "group": 1 } },
     { "keys": ["ctrl+3"], "command": "focus_group", "args": { "group": 2 } },
     { "keys": ["ctrl+4"], "command": "focus_group", "args": { "group": 3 } },
+
+    //将正在编辑的文件移动到指定窗口
     { "keys": ["ctrl+shift+1"], "command": "move_to_group", "args": { "group": 0 } },
     { "keys": ["ctrl+shift+2"], "command": "move_to_group", "args": { "group": 1 } },
     { "keys": ["ctrl+shift+3"], "command": "move_to_group", "args": { "group": 2 } },
     { "keys": ["ctrl+shift+4"], "command": "move_to_group", "args": { "group": 3 } },
     { "keys": ["ctrl+0"], "command": "focus_side_bar" },
 
+    //切换正在编辑的文件
     { "keys": ["super+1"], "command": "select_by_index", "args": { "index": 0 } },
     { "keys": ["super+2"], "command": "select_by_index", "args": { "index": 1 } },
     { "keys": ["super+3"], "command": "select_by_index", "args": { "index": 2 } },
@@ -511,32 +516,32 @@ and don't need to be repeated here. Anything listed here will take precedence, h
     { "keys": ["super+9"], "command": "select_by_index", "args": { "index": 8 } },
     { "keys": ["super+0"], "command": "select_by_index", "args": { "index": 9 } },
 
-    { "keys": ["f2"], "command": "next_bookmark" },
-    { "keys": ["shift+f2"], "command": "prev_bookmark" },
-    { "keys": ["super+f2"], "command": "toggle_bookmark" },
-    { "keys": ["super+shift+f2"], "command": "clear_bookmarks" },
-    { "keys": ["alt+f2"], "command": "select_all_bookmarks" },
+    { "keys": ["f2"], "command": "next_bookmark" }, //转到下一书签
+    { "keys": ["shift+f2"], "command": "prev_bookmark" }, //上一书签
+    { "keys": ["super+f2"], "command": "toggle_bookmark" }, //在行或者选择状态设置一个书签
+    { "keys": ["super+shift+f2"], "command": "clear_bookmarks" }, //清除所有书签
+    { "keys": ["alt+f2"], "command": "select_all_bookmarks" }, //选择所有书签
 
-    { "keys": ["super+k", "super+u"], "command": "upper_case" },
-    { "keys": ["super+k", "super+l"], "command": "lower_case" },
-    { "keys": ["super+k", "super+space"], "command": "set_mark" },
-    { "keys": ["super+k", "super+a"], "command": "select_to_mark" },
-    { "keys": ["super+k", "super+w"], "command": "delete_to_mark" },
-    { "keys": ["super+k", "super+x"], "command": "swap_with_mark" },
-    { "keys": ["super+k", "super+g"], "command": "clear_bookmarks", "args": {"name": "mark"} },
+    { "keys": ["super+k", "super+u"], "command": "upper_case" }, //转换为大写
+    { "keys": ["super+k", "super+l"], "command": "lower_case" }, //转换为小写
+    { "keys": ["super+k", "super+space"], "command": "set_mark" }, //设置标记
+    { "keys": ["super+k", "super+a"], "command": "select_to_mark" }, //选择当前光标到标记的所有内容
+    { "keys": ["super+k", "super+w"], "command": "delete_to_mark" }, //删除当前光标到标记的所有内容
+    { "keys": ["super+k", "super+x"], "command": "swap_with_mark" }, //交换标记位置
+    { "keys": ["super+k", "super+g"], "command": "clear_bookmarks", "args": {"name": "mark"} }, //清除标记
 
-    { "keys": ["super+plus"], "command": "increase_font_size" },
-    { "keys": ["super+equals"], "command": "increase_font_size" },
-    { "keys": ["super+minus"], "command": "decrease_font_size" },
+    { "keys": ["super+plus"], "command": "increase_font_size" }, //编辑器字体加大
+    { "keys": ["super+equals"], "command": "increase_font_size" }, //编辑器字体加大
+    { "keys": ["super+minus"], "command": "decrease_font_size" }, //编辑器字体变小
 
-    { "keys": ["ctrl+shift+w"], "command": "insert_snippet", "args": { "name": "Packages/XML/long-tag.sublime-snippet" } },
+    { "keys": ["ctrl+shift+w"], "command": "insert_snippet", "args": { "name": "Packages/XML/long-tag.sublime-snippet" } }, //为选中的内容加个P标签 ?
 
-    { "keys": ["ctrl+shift+k"], "command": "run_macro_file", "args": {"file": "Packages/Default/Delete Line.sublime-macro"} },
+    { "keys": ["ctrl+shift+k"], "command": "run_macro_file", "args": {"file": "Packages/Default/Delete Line.sublime-macro"} }, //删除一行
 
-    { "keys": ["super+alt+q"], "command": "wrap_lines" },
+    { "keys": ["super+alt+q"], "command": "wrap_lines" }, //折行?
 
-    { "keys": ["super+alt+["], "command": "fold" },
-    { "keys": ["super+alt+]"], "command": "unfold" },
+    { "keys": ["super+alt+["], "command": "fold" }, //折叠代码
+    { "keys": ["super+alt+]"], "command": "unfold" }, //展开折叠
     { "keys": ["super+k", "super+1"], "command": "fold_by_level", "args": {"level": 1} },
     { "keys": ["super+k", "super+2"], "command": "fold_by_level", "args": {"level": 2} },
     { "keys": ["super+k", "super+3"], "command": "fold_by_level", "args": {"level": 3} },
@@ -546,11 +551,11 @@ and don't need to be repeated here. Anything listed here will take precedence, h
     { "keys": ["super+k", "super+7"], "command": "fold_by_level", "args": {"level": 7} },
     { "keys": ["super+k", "super+8"], "command": "fold_by_level", "args": {"level": 8} },
     { "keys": ["super+k", "super+9"], "command": "fold_by_level", "args": {"level": 9} },
-    { "keys": ["super+k", "super+0"], "command": "unfold_all" },
-    { "keys": ["super+k", "super+j"], "command": "unfold_all" },
-    { "keys": ["super+k", "super+t"], "command": "fold_tag_attributes" },
+    { "keys": ["super+k", "super+0"], "command": "unfold_all" }, //展开所有折叠
+    { "keys": ["super+k", "super+j"], "command": "unfold_all" }, //同上
+    { "keys": ["super+k", "super+t"], "command": "fold_tag_attributes" }, //折叠标签属性
 
-    { "keys": ["super+alt+o"], "command": "toggle_overwrite" },
+    { "keys": ["super+alt+o"], "command": "toggle_overwrite" }, //覆盖开关?
 
     { "keys": ["alt+f2"], "command": "context_menu" },
 
@@ -575,18 +580,18 @@ and don't need to be repeated here. Anything listed here will take precedence, h
         ]
     },
 
-    // Find panel key bindings
-    { "keys": ["enter"], "command": "find_next", "context":
+    // Find panel key bindings 搜索面板时的绑定键
+    { "keys": ["enter"], "command": "find_next", "context": //查找下一个
         [{"key": "panel", "operand": "find"}, {"key": "panel_has_focus"}]
     },
-    { "keys": ["shift+enter"], "command": "find_prev", "context":
+    { "keys": ["shift+enter"], "command": "find_prev", "context": //查找上一个
         [{"key": "panel", "operand": "find"}, {"key": "panel_has_focus"}]
     },
-    { "keys": ["alt+enter"], "command": "find_all", "args": {"close_panel": true},
+    { "keys": ["alt+enter"], "command": "find_all", "args": {"close_panel": true}, //选择所有搜索词并关闭搜索面板
          "context": [{"key": "panel", "operand": "find"}, {"key": "panel_has_focus"}]
     },
 
-    // Replace panel key bindings
+    // Replace panel key bindings 替换面板时的绑定键
     { "keys": ["enter"], "command": "find_next", "context":
         [{"key": "panel", "operand": "replace"}, {"key": "panel_has_focus"}]
     },
@@ -600,7 +605,7 @@ and don't need to be repeated here. Anything listed here will take precedence, h
          "context": [{"key": "panel", "operand": "replace"}, {"key": "panel_has_focus"}]
     },
 
-    // Incremental find panel key bindings
+    // Incremental find panel key bindings 增量搜索时的绑定键
     { "keys": ["enter"], "command": "hide_panel", "context":
         [{"key": "panel", "operand": "incremental_find"}, {"key": "panel_has_focus"}]
     },
@@ -611,22 +616,22 @@ and don't need to be repeated here. Anything listed here will take precedence, h
         "context": [{"key": "panel", "operand": "incremental_find"}, {"key": "panel_has_focus"}]
     },
 
-    { "keys": ["super+,"], "command": "open_file", "args": {"file": "${packages}/User/Preferences.sublime-settings"} },
+    { "keys": ["super+,"], "command": "open_file", "args": {"file": "${packages}/User/Preferences.sublime-settings"} }, //打开属性设置
 
     { "keys": ["super+k", "super+y"], "command": "yank" },
-    { "keys": ["super+k", "super+k"], "command": "run_macro_file", "args": {"file": "Packages/Default/Delete to Hard EOL.sublime-macro"} },
-    { "keys": ["super+k", "super+backspace"], "command": "run_macro_file", "args": {"file": "Packages/Default/Delete to Hard BOL.sublime-macro"} },
-    { "keys": ["super+k", "super+c"], "command": "show_at_center" },
+    { "keys": ["super+k", "super+k"], "command": "run_macro_file", "args": {"file": "Packages/Default/Delete to Hard EOL.sublime-macro"} }, //删除到硬换行的位置
+    { "keys": ["super+k", "super+backspace"], "command": "run_macro_file", "args": {"file": "Packages/Default/Delete to Hard BOL.sublime-macro"} }, //同上,但是向上删除
+    { "keys": ["super+k", "super+c"], "command": "show_at_center" }, //光标位置居中
 
     // These are OS X built in commands, and don't need to be listed here, but
     // doing so lets them show up in the menu
     { "keys": ["ctrl+y"], "command": "yank" },
-    { "keys": ["super+backspace"], "command": "run_macro_file", "args": {"file": "Packages/Default/Delete to Hard BOL.sublime-macro"} },
+    { "keys": ["super+backspace"], "command": "run_macro_file", "args": {"file": "Packages/Default/Delete to Hard BOL.sublime-macro"} }, //向前删除到硬换行的位置
     // super+delete isn't a built in command, but makes sense anyway
-    { "keys": ["super+delete"], "command": "run_macro_file", "args": {"file": "Packages/Default/Delete to Hard EOL.sublime-macro"} },
-    { "keys": ["ctrl+k"], "command": "run_macro_file", "args": {"file": "Packages/Default/Delete to Hard EOL.sublime-macro"} },
+    { "keys": ["super+delete"], "command": "run_macro_file", "args": {"file": "Packages/Default/Delete to Hard EOL.sublime-macro"} }, //向后删除到硬换行的位置
+    { "keys": ["ctrl+k"], "command": "run_macro_file", "args": {"file": "Packages/Default/Delete to Hard EOL.sublime-macro"} }, //向后删除到硬换行的位置
     { "keys": ["ctrl+l"], "command": "show_at_center" },
-    { "keys": ["ctrl+o"], "command": "insert_snippet", "args": { "contents": "$0\n" } },
+    { "keys": ["ctrl+o"], "command": "insert_snippet", "args": { "contents": "$0\n" } }, //回车但光标位置不变
     { "keys": ["ctrl+super+d"], "command": "noop" },
     { "keys": ["ctrl+super+shift+d"], "command": "noop" },
 
@@ -634,6 +639,7 @@ and don't need to be repeated here. Anything listed here will take precedence, h
     //自己增加的快捷键
     { "keys": ["super+shift+r"], "command": "reveal_in_side_bar"}, //在侧边栏中定位正在编辑的文件
     { "keys": ["super+shift+k"], "command": "expand_tabs"}, //把TAB制表全换成4个空格
-    { "keys": ["super+k", "super+l"], "command": "toggle_minimap" }, //显示和隐藏右侧预览
-    { "keys": ["super+shift+h"], "command": "open_file", "args": {"file": "/etc/hosts"} } //快速打开hosts文件
+    { "keys": ["super+k", "super+p"], "command": "toggle_minimap" }, //显示和隐藏右侧预览
+    { "keys": ["super+shift+h"], "command": "open_file", "args": {"file": "/etc/hosts"} }, //快速打开hosts文件
+    { "keys": ["super+."], "command": "open_file", "args": {"file": "${packages}/User/Default (OSX).sublime-keymap"} } //打开属性设置
 ]

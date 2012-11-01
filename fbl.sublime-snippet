@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[\$this->fb->${1:log}(\$this->db->last_query($2));$0]]></content>
+    <tabTrigger>fbl</tabTrigger>
+    <scope>source.php</scope>
+    <description>last_query for firephp</description>
+</snippet>
