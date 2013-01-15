@@ -177,6 +177,11 @@ and don't need to be repeated here. Anything listed here will take precedence, h
             { "key": "setting.auto_complete_commit_on_tab", "operand": false }
         ]
     },
+    {
+        "keys": ["alt+super+enter"],
+        "command": "run_macro_file",
+        "args": {"file": "Packages/User/Line-terminator-and-newline.sublime-macro"}
+    },
 
     { "keys": ["super+t"], "command": "show_overlay", "args": {"overlay": "goto", "show_files": true} }, //goto 输入
     { "keys": ["super+p"], "command": "show_overlay", "args": {"overlay": "goto", "show_files": true} }, //goto 输入

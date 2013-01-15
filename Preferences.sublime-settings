@@ -1,16 +1,13 @@
 {
 	"auto_match_enabled": true,
 	"color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
-	"ensure_newline_at_eof_on_save": true,
 	"fade_fold_buttons": false,
 	"folder_exclude_patterns":
 	[
 		".svn",
 		".git",
 		".hg",
-		"CVS",
-		"bbs.androidcn.com",
-		"passport.androidcn.com"
+		"CVS"
 	],
 	"font_face": "courier new",
 	"font_size": 15.0,

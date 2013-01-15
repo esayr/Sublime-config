@@ -1,0 +1,23 @@
+<snippet>
+    <content><![CDATA[/**
+ * ${4:undocumented class}
+ *
+ * @package     ${5:default}
+ * @category    ${6:Libraries}
+ * @author      ${7:easy.rong}
+ **/
+class ${1:ClassName}${2: extends ${3:AnotherClass}}
+{
+	$8
+	${9:public} function ${10:__construct}(${11:argument})
+	{
+        ${0:# code...}
+	}
+    // --------------------------------------------------------------------
+
+}
+// end ${1:ClassName}]]></content>
+    <tabTrigger>cl</tabTrigger>
+    <scope>source.php</scope>
+    <description>类 …</description>
+</snippet>
