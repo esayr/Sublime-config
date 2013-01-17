@@ -2,7 +2,7 @@
     <content><![CDATA[/**
  * ${4:undocumented function}
  *
- * @param ${5:void}
+ * @param  ${5:void}
  * @return ${6:string}
  * @author ${PHPDOC_AUTHOR:$TM_FULLNAME}${7:easy.rong}
  **/
