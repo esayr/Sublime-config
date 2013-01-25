@@ -12,6 +12,10 @@
 	"font_face": "courier new",
 	"font_size": 15.0,
 	"highlight_line": false,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
 	"match_brackets_angle": true,
 	"match_brackets_content": true,
 	"match_brackets_square": true,
