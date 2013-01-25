@@ -647,6 +647,6 @@ and don't need to be repeated here. Anything listed here will take precedence, h
     { "keys": ["super+k", "super+p"], "command": "toggle_minimap" }, //显示和隐藏右侧预览
     { "keys": ["super+shift+h"], "command": "open_file", "args": {"file": "/etc/hosts"} }, //快速打开hosts文件
     { "keys": ["super+."], "command": "open_file", "args": {"file": "${packages}/User/Default (OSX).sublime-keymap"} }, //打开属性设置
+    { "keys": ["f1"], "command": "goto_documentation" } //查询手册
 
-    { "keys": ["f1"], "command": "goto_documentation" }
 ]
