@@ -1,0 +1,32 @@
+<snippet>
+    <content><![CDATA[
+<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+
+/**
+ * ${3:XX控制器}
+ *
+ * @package     ${4:User}
+ * @category    ${5:Controllers}
+ * @author      ${6:easy.rong}
+ **/
+
+class ${1:${TM_FILENAME/(.+)\..+|.*/\u$1/:Controllername}} extends ${2:CI}_Controller {
+
+    function __construct()
+    {
+        parent::__construct();$7
+    }
+
+    // --------------------------------------------------------------------
+
+    $0
+
+}
+
+/* End of file ${TM_FILENAME:${1/(.+)/\l$1.php/}} */
+/* Location: ./${TM_FILEPATH/.+((?:application).+)/$1/:application/controllers/${1/(.+)/\l$1.php/}} */
+]]></content>
+    <tabTrigger>cont</tabTrigger>
+    <scope>source.php, text.html.basic, text.plain</scope>
+    <description>CI - Base Controller</description>
+</snippet>
